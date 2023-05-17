@@ -70,3 +70,12 @@ copyIcon.addEventListener("click", () => {
 });
 
 btn.addEventListener("click", handleClick);
+
+options.forEach((option) => {
+  if (option.id === 'lowercase') {
+    option.checked = true;
+    option.addEventListener('click', (event) => {
+      event.preventDefault();
+    });
+  }
+});
